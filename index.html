@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>sunnyside</h2>
+        <nav class="links">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <button class="contact">CONTACT</button>
+            <button class="close-btn nav-btn">X</button>
+        </nav>
+        <button class="open-btn nav-btn">≡</button>
+        <h1 class="creatives">WE ARE CREATIVES</h1>
+    </header>
+
+
+    <section>
+        <div class="main">
+            <div class="primary trans-mb">
+            </div>
+
+            <div class="primary brand">
+                <h1>Transform your brand</h1>
+                <p>
+                    We are full-service creative agency spacializing in
+                    helping brands grow fast. Engage your clients through
+                    compelling visuals that do most of the marketing for you.
+                </p>
+                <button>LEARN MORE</button>
+            </div>
+
+            <div class="primary trans-dp">
+            </div>
+
+            <div class="primary standout">
+
+            </div>
+
+            <div class="primary stand">
+                <h1>Stand out to the right audience</h1>
+                <p>
+                    Using a collaborative formula of designers, researchers,
+                    photographers, videographers, and copywriters, we'll
+                    build and extend your brand in digital places.
+                </p>
+                <button>LEARN MORE</button>
+            </div>
+
+            <div class="primary graphic">
+                <h1>Graphic Design</h1>
+                <p>
+                    Great design makes you memorable. We deliver
+                    artwork that underscores your brand message
+                    and captures potential clients' attenton.
+                </p>
+            </div>
+
+            <div class="primary photo">
+                <h1>Photography</h1>
+                <p>
+                    Increase your credibility by getting the most
+                    stunning, high-quality photos that improve your
+                    business image.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-section">
+        <h3>CLIENT TESTIMONIALS</h3>
+        <div class="main1">
+            <div class="baby emily-div">
+                <img src="./images/image-emily.jpg" alt="Emily R.">
+                <p  class="testimony">
+                    We put trust in Sunnyside and they
+                    delivered, making sure our needs were met
+                    and deadlines were always hit.
+                </p>
+                <h3>Emily R.</h3>
+                <p class="role">Marketing Director</p>
+            </div>
+            <div class="baby thomas-div">
+                <img src="./images/image-thomas.jpg" alt="Thomas S.">
+                <p class="testimony">
+                    Sunnyside's enthusiasm coupled with their
+                    keen interest in our brand's success made it
+                    a satisfying and enjoyable experience.
+                </p>
+                <h3>Thomas S.</h3>
+                <p class="role">Chief Operating Officer</p>
+            </div>
+            <div class="baby jennie-div">
+                <img src="./images/image-jennie.jpg" alt="Jennie F.">
+                <p class="testimony">
+                    Incredible end result! Our sales increased
+                    over 400% when we worked with Sunnyside.
+                    Highly recommended!
+                </p>
+                <h3>Jennie F.</h3>
+                <p class="role">Business Owner</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-div">
+        <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bootles">
+        <img src="./images/desktop/image-gallery-orange.jpg" alt="Orange">
+        <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone">
+        <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="Sugar Cubes">
+    </div>
+
+
+    <footer>
+        <h1>sunnyside</h1>
+        <div class="footer-link">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+        </div>
+        <img src="./images/facebook.png" class="fb" alt="Facebook">
+        <img src="./images/instagram.png" alt="Instagram">
+        <img src="./images/twitter.png" alt="Twitter">
+        <img src="./images/pinterest.png" alt="Pinterest">
+    </footer>
+
+    <script>
+        const openBtn = document.querySelector(".open-btn");
+        const closeBtn = document.querySelector(".close-btn");
+        const navbar = document.querySelector(".links");
+
+        openBtn.addEventListener("click", () => {
+            navbar.classList.toggle("responsive-nav");
+            openBtn.style.visibility = "hidden"
+        });
+
+        closeBtn.addEventListener("click", () => {
+                navbar.classList.toggle("responsive-nav");
+                openBtn.style.visibility = "visible"
+            });
+    </script>
+</body>
+
+</html>
