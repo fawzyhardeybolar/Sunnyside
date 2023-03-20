@@ -21,42 +21,52 @@
         </nav>
         <button class="open-btn nav-btn">≡</button>
         <h1 class="creatives">WE ARE CREATIVES</h1>
+
+        <button>
+            <a href="./index1.html">Go</a>
+        </button>
     </header>
 
+    <div class="main">
+        <div class="img">
+            <img src="./images/desktop/image-transform.jpg" alt="">
+        </div>
 
-    <section>
-        <div class="main">
-            <div class="primary trans-mb">
+        <div class="primary brand">
+            <h1>Transform your brand</h1>
+            <p>
+                We are full-service creative agency spacializing in
+                helping brands grow fast. Engage your clients through
+                compelling visuals that do most of the marketing for you.
+            </p>
+            <div class="div">
+                <button class="lm-1">LEARN MORE</button>
             </div>
+        </div>
+    </div>
 
-            <div class="primary brand">
-                <h1>Transform your brand</h1>
-                <p>
-                    We are full-service creative agency spacializing in
-                    helping brands grow fast. Engage your clients through
-                    compelling visuals that do most of the marketing for you.
-                </p>
-                <button>LEARN MORE</button>
+    <div class="main1">
+        <div class="img">
+            <img src="./images/desktop/image-stand-out.jpg" alt="">
+        </div>
+
+        <div class="primary stand">
+            <h1>Stand out to the right audience</h1>
+            <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we'll
+                build and extend your brand in digital places.
+            </p>
+            <div class="div">
+                <button class="lm-2">LEARN MORE</button>
             </div>
+        </div>
+    </div>
 
-            <div class="primary trans-dp">
-            </div>
 
-            <div class="primary standout">
-
-            </div>
-
-            <div class="primary stand">
-                <h1>Stand out to the right audience</h1>
-                <p>
-                    Using a collaborative formula of designers, researchers,
-                    photographers, videographers, and copywriters, we'll
-                    build and extend your brand in digital places.
-                </p>
-                <button>LEARN MORE</button>
-            </div>
-
-            <div class="primary graphic">
+    <div class="main2">
+        <div class="primary graphic">
+            <div class="text">
                 <h1>Graphic Design</h1>
                 <p>
                     Great design makes you memorable. We deliver
@@ -64,8 +74,10 @@
                     and captures potential clients' attenton.
                 </p>
             </div>
+        </div>
 
-            <div class="primary photo">
+        <div class="primary photo">
+            <div class="text">
                 <h1>Photography</h1>
                 <p>
                     Increase your credibility by getting the most
@@ -74,14 +86,15 @@
                 </p>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- </div> -->
 
     <section class="client-section">
         <h3>CLIENT TESTIMONIALS</h3>
-        <div class="main1">
+        <div class="main-div1">
             <div class="baby emily-div">
                 <img src="./images/image-emily.jpg" alt="Emily R.">
-                <p  class="testimony">
+                <p class="testimony">
                     We put trust in Sunnyside and they
                     delivered, making sure our needs were met
                     and deadlines were always hit.
@@ -144,9 +157,9 @@
         });
 
         closeBtn.addEventListener("click", () => {
-                navbar.classList.toggle("responsive-nav");
-                openBtn.style.visibility = "visible"
-            });
+            navbar.classList.toggle("responsive-nav");
+            openBtn.style.visibility = "visible"
+        });
     </script>
 </body>
 

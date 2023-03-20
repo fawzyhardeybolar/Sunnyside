@@ -5,16 +5,17 @@
 
 header {
   background-image: url("./images/mobile/image-header.jpg");
-  height: 79.5vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
-  padding: 1rem;
+  width: 100%;
 }
 
 header > h2 {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1rem;
 }
 
 nav {
@@ -99,16 +100,22 @@ nav {
   flex-direction: column;
 }
 
-.trans-dp {
-  visibility: hidden;
+.img {
+  width: 100%;
 }
 
-.trans-mb {
-  background-image: url("./images/mobile/image-transform.jpg");
+.img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.trans {
+  background-image: url(./images/mobile/image-transform.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 100%;
-  height: 50vh;
+  /* background-size: 100%; */
+  /* width: 100%; */
+  /* height: 15rem; */
 }
 
 .brand {
@@ -148,7 +155,7 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100%;
-  height: 50vh;
+  height: 40vh;
 }
 
 .stand {
@@ -188,11 +195,12 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
-  width: 95%;
-  height: 100vh;
+  height: 78vh;
   text-align: center;
-  padding: 0.5rem;
-  padding-bottom: 30px;
+}
+
+.text {
+  margin-block-start: 90%;
 }
 
 .graphic h1 {
@@ -200,14 +208,11 @@ nav {
   color: #465258;
   font-size: xx-large;
   margin: 0 auto;
-  margin-block-start: 120%;
 }
 
 .graphic p {
-  font-size: 18px;
-  /* width: 40ch; */
   margin: 0 auto;
-  margin-block-start: 20px;
+  margin-block-start: 10px;
   line-height: 1.6rem;
   color: #4b585f;
 }
@@ -217,21 +222,16 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
-  width: 95%;
-  height: 100vh;
+  height: 75vh;
   text-align: center;
-  padding: 0.5rem;
-  padding-bottom: 30px;
 }
 
 .photo h1 {
   color: #465258;
   font-size: xx-large;
-  margin-block-start: 120%;
 }
 
 .photo p {
-  font-size: 18px;
   margin: 0 auto;
   margin-block-start: 20px;
   line-height: 1.6rem;
@@ -250,7 +250,7 @@ nav {
   margin-block-end: 30px;
 }
 
-.main1 {
+.main-div1 {
   display: flex;
   flex-direction: column;
 }
@@ -317,246 +317,338 @@ footer img {
   padding: 20% 5%;
 }
 
-/* .navbar h2 {
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+@media (min-width: 360px) {
+  header {
+    height: 75vh;
+  }
+
+  .trans {
+    height: 17rem;
+  }
+
+  .graphic {
+    height: 80vh;
+  }
+
+  .standout {
+    height: 45vh;
+  }
 }
 
-.links {
-  width: 30%;
+@media (min-width: 380px) {
+  .graphic {
+    height: 80vh;
+  }
 }
 
-.links a {
-  text-decoration: none;
-  color: white;
-  margin-inline-end: 20px;
+@media (min-width: 390px) {
+  header {
+    height: 62vh;
+  }
+
+  .graphic {
+    height: 70vh;
+  }
 }
 
-.contact {
-  background-color: white;
-  color: black;
-  width: 35%;
-  height: 7vh;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
+@media (min-width: 400px) {
+  header {
+    height: 89vh;
+  }
+
+  .trans {
+    height: 20rem;
+  }
+
+  .standout {
+    height: 50vh;
+  }
+
+  .graphic {
+    height: 96vh;
+  }
+
+  .photo {
+    height: 98vh;
+  }
 }
 
-.links button:hover {
-  background-color: rgb(101, 210, 253);
-  color: white;
+@media (min-width: 450px) {
+  .standout {
+    height: 58vh;
+  }
 }
 
-header h1 {
-  color: white;
-  text-align: center;
-  margin-block-start: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bolder;
-  word-spacing: 10px;
-  letter-spacing: 5px;
+@media (min-width: 480px) {
+  header {
+    height: 77vh;
+  }
+
+  .graphic {
+    height: 86vh;
+  }
 }
 
-.main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+@media (min-width: 500px) {
+  header {
+    height: 110vh;
+  }
+
+  .trans {
+    height: 25rem;
+  }
+
+  .brand {
+    height: 28rem;
+  }
+
+  .brand p {
+    width: 90%;
+    margin: 1.5rem auto;
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  .brand button {
+    margin-block-start: 0px;
+  }
+
+  .stand {
+    height: 27rem;
+  }
+
+  .stand p {
+    width: 90%;
+    margin: 1.5rem auto;
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  .stand button {
+    margin-block-start: 0;
+  }
+
+  .graphic {
+    height: 125vh;
+  }
+
+  .text {
+    margin-block-start: 100%;
+  }
+
+  .graphic p {
+    width: 39ch;
+    margin: 1.5rem auto;
+    font-size: 22px;
+    line-height: 2.5rem;
+  }
+
+  .photo {
+    height: 125vh;
+  }
+
+  .photo p {
+    width: 39ch;
+    margin: 1.5rem auto;
+    font-size: 22px;
+    line-height: 2.5rem;
+  }
+
+  .emily-div p {
+    width: 32ch;
+    margin: 1.5rem auto;
+    font-size: 22px;
+    line-height: 2rem;
+  }
+
+  .thomas-div p {
+    width: 33ch;
+    margin: 1.5rem auto;
+    font-size: 22px;
+    line-height: 2rem;
+  }
+
+  .jennie-div p {
+    width: 35ch;
+    margin: 1.5rem auto;
+    font-size: 22px;
+    line-height: 2rem;
+  }
 }
 
-.brand {
-  padding: 20%;
+@media (min-width: 520px) {
+  .trans {
+    height: 25rem;
+  }
+
+  .standout {
+    height: 68vh;
+  }
+
+  .graphic,
+  .photo {
+    height: 130vh;
+  }
+
+  .text {
+    margin-block-start: 105%;
+  }
 }
 
-.brand h1 {
-  width: 15ch;
-  font-size: 35px;
-  margin-block-end: 30px;
+@media (min-width: 580px) {
+  header {
+    height: 130vh;
+  }
+
+  .trans {
+    height: 28rem;
+  }
+
+  .standout {
+    height: 75vh;
+  }
+
+  .graphic,
+  .photo {
+    height: 146vh;
+  }
 }
 
-.brand p {
-  width: 46ch;
-  line-height: 25px;
-  margin-block-end: 30px;
+@media (min-width: 650px) {
+  header {
+    height: 145vh;
+  }
+
+  .trans {
+    height: 32rem;
+  }
+
+  .standout {
+    height: 85vh;
+  }
+
+  .graphic,
+  .photo {
+    height: 160vh;
+  }
 }
 
-.brand button {
-  background-color: rgb(255, 251, 251);
-  width: 25%;
-  height: 6vh;
-  border: none;
-  border-bottom: 5px solid rgb(255, 255, 225);
-  border-radius: 2px;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 13px;
+@media (min-width: 700px) {
+  header {
+    height: 158vh;
+  }
+
+  .trans {
+    height: 35rem;
+  }
+
+  .standout {
+    height: 90vh;
+  }
+
+  .graphic,
+  .photo {
+    height: 177vh;
+  }
 }
 
-.brand button:hover {
-  cursor: pointer;
-  border-bottom: 5px solid rgb(249, 249, 103);
+@media (min-width: 750px) {
+  header {
+    height: 165vh;
+  }
+
+  .trans {
+    height: 38rem;
+  }
+
+  .brand {
+    height: 30rem;
+  }
+
+  .brand h1 {
+    margin-block-start: 40px;
+  }
+
+  .brand p {
+    margin-block-start: 40px;
+    font-size: 27px;
+    line-height: 3rem;
+  }
+
+  .brand button {
+    margin-block-start: 30px;
+  }
+
+  .standout {
+    height: 95vh;
+  }
+
+  .stand {
+    height: 30rem;
+  }
+
+  .stand h1 {
+    margin-block-start: 40px;
+  }
+
+  .stand p {
+    margin-block-start: 40px;
+    font-size: 27px;
+    line-height: 3rem;
+  }
+
+  .stand button {
+    margin-block-start: 30px;
+  }
+
+  .graphic,
+  .photo {
+    height: 177vh;
+  }
+
+  .emily-div p,
+  .thomas-div p,
+  .jennie-div p {
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  .footer-link {
+    margin: 10% 0;
+  }
+
+  .footer-link a {
+    text-decoration: none;
+    color: #555d61;
+    font-size: 22px;
+    padding: 0 10%;
+  }
+
+  footer img {
+    width: 4%;
+    padding: 10% 5%;
+  }
 }
 
-.transform {
-  background-image: url("./images/desktop/image-transform.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85vh;
+@media (min-width: 768px) {
+  header {
+    height: 1000px;
+  }
+
+  .standout {
+    height: 580px;
+  }
+
+  .graphic,
+  .photo {
+    height: 1200px;
+  }
+
+  .graphic p,
+  .photo p {
+    font-size: 30px;
+  }
 }
 
-.standout {
-  background-image: url("./images/desktop/image-stand-out.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85vh;
-}
-
-.stand {
-  padding: 20%;
-}
-
-.stand h1 {
-  width: 25ch;
-  font-size: 35px;
-  margin-block-end: 30px;
-}
-
-.stand p {
-  width: 46ch;
-  line-height: 25px;
-  margin-block-end: 30px;
-}
-
-.stand button {
-  background-color: white;
-  width: 25%;
-  height: 6vh;
-  border: none;
-  border-bottom: 5px solid rgb(255, 197, 197);
-  border-radius: 2px;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 13px;
-}
-
-.stand button:hover {
-  cursor: pointer;
-  border-bottom: 5px solid red;
-}
-
-.graphic {
-  background-image: url("./images/desktop/image-graphic-design.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85vh;
-  text-align: center;
-}
-
-.graphic h1 {
-  font-family: "Times New Roman", Times, serif;
-  margin-block-start: 60%;
-}
-
-.graphic p {
-  width: 40ch;
-  text-align: center;
-  margin: 0 auto;
-  margin-block-start: 20px;
-}
-
-.photo {
-  background-image: url("./images/desktop/image-photography.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 85vh;
-  text-align: center;
-}
-
-.photo h1 {
-  font-family: "Times New Roman", Times, serif;
-  margin-block-start: 60%;
-}
-
-.photo p {
-  width: 40ch;
-  margin: 0 auto;
-  margin-block-start: 20px;
-}
-
-.client-section {
-  text-align: center;
-  padding: 20px;
-}
-
-.client-section h2 {
-  padding-block-start: 100px;
-}
-
-.main1 {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  text-align: center;
-  margin-block-start: 50px;
-}
-
-.baby img {
-  border-radius: 100px;
-  margin-block-end: 50px;
-}
-
-.emily-div,
-.thomas-div p {
-  width: 35ch;
-}
-
-.jennie-div p {
-  width: 37ch;
-}
-
-.baby p {
-  margin-block-end: 40px;
-}
-
-.baby h3 {
-  margin-block-end: 20px;
-}
-
-.main-div {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.main-div img {
-  width: 100%;
-}
-
-footer {
-  text-align: center;
-  background-color: rgb(126, 209, 181);
-}
-
-footer h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(46, 103, 83);
-  padding-top: 100px;
-}
-
-.footer-link {
-  margin: 3% 0;
-}
-
-.footer-link a {
-  text-decoration: none;
-  color: rgb(103, 148, 132);
-  margin: 0 2%;
-}
-
-footer img {
-  width: 2%;
-  margin: 3% 1%;
-} */
-
-/* MEDIA QUERY */
-
-@media (max-width: 1440px) {
+@media (min-width: 800px) {
 }

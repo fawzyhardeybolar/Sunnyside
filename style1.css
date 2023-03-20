@@ -1,0 +1,76 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 800px;
+  height: 1150px;
+}
+
+.main > .img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main > .img > img {
+  width: 400px;
+  height: 400px;
+}
+
+.primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.div > button {
+  transform: translateX(-105px);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.lm-1 {
+  background: linear-gradient(180deg, white, rgb(255, 255, 212));
+  border: none;
+  padding: 5px 10px;
+}
+
+.lm-2 {
+  background: linear-gradient(180deg, white, rgb(255, 171, 171));
+  border: none;
+  padding: 5px 10px;
+}
+
+.graphic {
+  background: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.photo {
+  background: url(./images/desktop/image-photography.jpg);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  margin-top: 20px;
+}
+
+.graphic,
+.photo {
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  object-fit: contain;
+  padding-bottom: 130px;
+}
+
+.text > p {
+  margin-top: -3px;
+}
